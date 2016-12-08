@@ -1,5 +1,4 @@
 
-
 class User():
    def __init__(self, first=None):
       self.first = first
@@ -16,3 +15,15 @@ print(z.get_sum())
 
 
 print(User(10).get_sum())
+
+lst = [0, 1, 2, 3, 4]
+string = "hello world"
+
+print(lst[0:2])
+print(string[3:5])
+
+print(lst[3:])
+print(lst[:2])
+
+print(string[:-2])
+

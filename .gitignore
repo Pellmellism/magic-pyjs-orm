@@ -2,3 +2,4 @@ __javascript__/
 __pycache__/
 *.swp
 pywatch.py
+jsout

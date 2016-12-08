@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./watchers/pywatch.py "pyjs" py "./watchers/pyjs-watch.py %s" -p
+./watchers/pywatch.py "pyjs" py "./watchers/watch-pyjs.py %s" -p
 
