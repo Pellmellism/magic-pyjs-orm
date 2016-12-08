@@ -1,0 +1,29 @@
+
+
+//////User.py
+#idc, boolc, intc
+from pyjs import *
+
+class User:
+   __tablename__ = 'users'
+
+   id = idc()
+   counter = intc()
+   debt_type = textc()
+   owner = intc() #0 = spouse, 1 = mine, 2 = joint
+
+//////User.py
+
+
+
+var User = {
+   getOwnerStr : function() {
+      if (this.owner == '0')
+         return 'spouse';
+      else if (this.owner == '1')
+         return 'mine';
+      else if (this.owner == '2')
+         return 'joint';
+   }
+
+};
