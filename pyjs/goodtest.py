@@ -1,5 +1,7 @@
 
 class User():
+   x = 5
+
    def __init__(self, first=None):
       self.first = first
       self.y = 35
@@ -26,4 +28,6 @@ print(lst[3:])
 print(lst[:2])
 
 print(string[:-2])
+
+exports = User
 
