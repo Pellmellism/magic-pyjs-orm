@@ -1,1 +1,3 @@
-if (typeof(window) == 'undefined') window = {}
+KK_IN_JS = true;
+
+/*if (typeof(window) == 'undefined') window = {}*/

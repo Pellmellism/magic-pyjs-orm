@@ -1,5 +1,6 @@
 __javascript__/
 __pycache__/
 *.swp
+*.pyc
 pywatch.py
 jsout

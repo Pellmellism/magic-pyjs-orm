@@ -1,3 +1,12 @@
+#import utils, shim
+import stdlib.utils
+import stdlib.shim
+
+utils = stdlib.utils
+#shim = stdlib.shim
+
+def enum_liab_type(ltype):
+   return utils.enum_helper(['a', 'b', 'c'], ltype)
 
 class User():
    x = 5
@@ -29,5 +38,4 @@ print(lst[:2])
 
 print(string[:-2])
 
-exports = User
 
