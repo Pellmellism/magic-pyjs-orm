@@ -1,12 +1,36 @@
 #import utils, shim
+#import stdlib.utils as utils
+#import stdlib.shim as shim
+#import stdlib
+#from stdlib import utils
+#from stdlib import shim
+
+#utils = stdlib.utils
+#shim = stdlib.shim
+
 import stdlib.utils
-import stdlib.shim
+#  ##import stdlib.utils as utils
+
 
 utils = stdlib.utils
-#shim = stdlib.shim
 
 def enum_liab_type(ltype):
    return utils.enum_helper(['a', 'b', 'c'], ltype)
+   pass
+
+
+class Column:
+   def __init__(self, cType):
+      self.cType = cType
+
+
+class Dollar():
+   val = Column('int')
+   def __init__(self, val):
+      self.val = val
+
+   def format(self):
+      return '$' + str(self.val)
 
 class User():
    x = 5
@@ -26,6 +50,9 @@ print(z.get_sum())
 
 
 print(User(10).get_sum())
+
+
+enum_liab_type('b')
 
 lst = [0, 1, 2, 3, 4]
 string = "hello world"

@@ -31,7 +31,9 @@ __pragma__('endif')
 
    #sys.path.append('stdlib')
 
-import shim
+#__include__('.')
+import stdlib.shim
+shim = stdlib.shim
 
 to_lower_case = shim.to_lower_case
 

@@ -1,5 +1,13 @@
 
 #import utils, std, goodtest
+#__include__('.')
+#import utils, shim
 
-#import shim
-#import utils
+#utils = utils
+#shim = shim
+
+#from . import shim
+#from . import utils
+
+import stdlib.utils
+import stdlib.shim
